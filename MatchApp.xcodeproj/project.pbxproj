@@ -292,9 +292,13 @@
 				DEVELOPMENT_TEAM = WQ33LA2JZ5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = MatchApp;
+				INFOPLIST_KEY_CFBundleName = MatchApp;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,9 +324,13 @@
 				DEVELOPMENT_TEAM = WQ33LA2JZ5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = MatchApp;
+				INFOPLIST_KEY_CFBundleName = MatchApp;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
