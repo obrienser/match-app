@@ -13,6 +13,8 @@
 		345E78FB269D6EE000C9BE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345E78F9269D6EE000C9BE12 /* Main.storyboard */; };
 		345E78FD269D6EE300C9BE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345E78FC269D6EE300C9BE12 /* Assets.xcassets */; };
 		345E7900269D6EE300C9BE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345E78FE269D6EE300C9BE12 /* LaunchScreen.storyboard */; };
+		345E7908269EE38700C9BE12 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E7907269EE38700C9BE12 /* CardModel.swift */; };
+		345E790A269EE44D00C9BE12 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E7909269EE44D00C9BE12 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		345E78FC269D6EE300C9BE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		345E78FF269D6EE300C9BE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		345E7901269D6EE300C9BE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345E7907269EE38700C9BE12 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		345E7909269EE44D00C9BE12 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				345E78FC269D6EE300C9BE12 /* Assets.xcassets */,
 				345E78FE269D6EE300C9BE12 /* LaunchScreen.storyboard */,
 				345E7901269D6EE300C9BE12 /* Info.plist */,
+				345E7907269EE38700C9BE12 /* CardModel.swift */,
+				345E7909269EE44D00C9BE12 /* Card.swift */,
 			);
 			path = MatchApp;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				345E78F8269D6EE000C9BE12 /* ViewController.swift in Sources */,
+				345E7908269EE38700C9BE12 /* CardModel.swift in Sources */,
+				345E790A269EE44D00C9BE12 /* Card.swift in Sources */,
 				345E78F4269D6EE000C9BE12 /* AppDelegate.swift in Sources */,
 				345E78F6269D6EE000C9BE12 /* SceneDelegate.swift in Sources */,
 			);
