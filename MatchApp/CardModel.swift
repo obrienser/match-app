@@ -15,12 +15,27 @@ class CardModel {
         // Declare an empty array
         var generatedCards = [Card]()
         
-        // TODO: Исключить вероятность одинаковых карточек (используя while или if)
+        // Declare an empty array for used numbers
+        var usedNumbers = [Int]()
+        
+        var counter = 0
+        
         // Randomly generate 8 pairs of cards
-        for _ in 1...8 {
-            
+        while counter < 8 {
+                
             // Generate a random number
             let randomNumber = Int.random(in: 1...13)
+                
+            // Check the number
+            if usedNumbers.contains(randomNumber) {
+                continue
+            }
+            
+            // Add number to "used"
+            usedNumbers.append(randomNumber)
+            
+            // Increasing the counter
+            counter += 1
             
             // Create two new card objects
             let cardOne = Card()
@@ -32,6 +47,8 @@ class CardModel {
             
             // Add them to the array
             generatedCards += [cardOne, cardTwo]
+            
+            print(randomNumber)
             
         }
         
