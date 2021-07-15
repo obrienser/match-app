@@ -81,6 +81,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6MV-kS-Rer" secondAttribute="bottom" id="wIa-We-gSj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="6MV-kS-Rer" id="hAS-Tf-duf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
