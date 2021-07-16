@@ -25,4 +25,16 @@ class CardCollectionViewCell: UICollectionViewCell {
         
     }
     
+    func flipUp() {
+        
+        
+        
+    }
+    
+    func flipDown() {
+        
+        
+        
+    }
+    
 }

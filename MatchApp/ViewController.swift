@@ -40,8 +40,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Get a cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
-        // TODO: Finish configuring the cell
-        cell.frontImageView.image =
+        // Get the card from the card array
+        let card = cardsArray[indexPath.row]
+        
+        // Finish configuring the cell
+        cell.configureCell(card: card)
         
         // Return it
         return cell
