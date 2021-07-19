@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34490EE226A58A4D006C2095 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34490EDE26A58A4D006C2095 /* dingwrong.wav */; };
+		34490EE326A58A4D006C2095 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34490EDF26A58A4D006C2095 /* cardflip.wav */; };
+		34490EE426A58A4D006C2095 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34490EE026A58A4D006C2095 /* dingcorrect.wav */; };
+		34490EE526A58A4D006C2095 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34490EE126A58A4D006C2095 /* shuffle.wav */; };
+		34490EE726A58AB2006C2095 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34490EE626A58AB2006C2095 /* SoundManager.swift */; };
 		345E78F4269D6EE000C9BE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E78F3269D6EE000C9BE12 /* AppDelegate.swift */; };
 		345E78F6269D6EE000C9BE12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E78F5269D6EE000C9BE12 /* SceneDelegate.swift */; };
 		345E78F8269D6EE000C9BE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E78F7269D6EE000C9BE12 /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34490EDE26A58A4D006C2095 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		34490EDF26A58A4D006C2095 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		34490EE026A58A4D006C2095 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		34490EE126A58A4D006C2095 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		34490EE626A58AB2006C2095 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		345E78F0269D6EE000C9BE12 /* MatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E78F3269D6EE000C9BE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345E78F5269D6EE000C9BE12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34490EDD26A58A09006C2095 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				34490EDF26A58A4D006C2095 /* cardflip.wav */,
+				34490EE026A58A4D006C2095 /* dingcorrect.wav */,
+				34490EDE26A58A4D006C2095 /* dingwrong.wav */,
+				34490EE126A58A4D006C2095 /* shuffle.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		345E78E7269D6EE000C9BE12 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +83,14 @@
 		345E78F2269D6EE000C9BE12 /* MatchApp */ = {
 			isa = PBXGroup;
 			children = (
+				34490EDD26A58A09006C2095 /* Sounds */,
 				345E78F3269D6EE000C9BE12 /* AppDelegate.swift */,
 				345E78F5269D6EE000C9BE12 /* SceneDelegate.swift */,
 				345E78F7269D6EE000C9BE12 /* ViewController.swift */,
 				345E7909269EE44D00C9BE12 /* Card.swift */,
 				345E7907269EE38700C9BE12 /* CardModel.swift */,
 				345E790B269EEFE200C9BE12 /* CardCollectionViewCell.swift */,
+				34490EE626A58AB2006C2095 /* SoundManager.swift */,
 				345E78F9269D6EE000C9BE12 /* Main.storyboard */,
 				345E78FC269D6EE300C9BE12 /* Assets.xcassets */,
 				345E78FE269D6EE300C9BE12 /* LaunchScreen.storyboard */,
@@ -134,9 +157,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34490EE226A58A4D006C2095 /* dingwrong.wav in Resources */,
 				345E7900269D6EE300C9BE12 /* LaunchScreen.storyboard in Resources */,
 				345E78FD269D6EE300C9BE12 /* Assets.xcassets in Resources */,
+				34490EE526A58A4D006C2095 /* shuffle.wav in Resources */,
 				345E78FB269D6EE000C9BE12 /* Main.storyboard in Resources */,
+				34490EE326A58A4D006C2095 /* cardflip.wav in Resources */,
+				34490EE426A58A4D006C2095 /* dingcorrect.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +179,7 @@
 				345E790A269EE44D00C9BE12 /* Card.swift in Sources */,
 				345E78F4269D6EE000C9BE12 /* AppDelegate.swift in Sources */,
 				345E790C269EEFE200C9BE12 /* CardCollectionViewCell.swift in Sources */,
+				34490EE726A58AB2006C2095 /* SoundManager.swift in Sources */,
 				345E78F6269D6EE000C9BE12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
