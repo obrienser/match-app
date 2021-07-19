@@ -77,7 +77,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 
                 
                 // Run the comparison logic
-                
+                checkForMatch(indexPath)
                 
             }
             
@@ -93,6 +93,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cardOne = cardsArray[firstFlippedCardIndex!.row]
         let cardTwo = cardsArray[secondFlippedCardIndex.row]
         
+        // Get the two  collection view cells  that represents card one and two
+        let cardOneCell = collectionView.cellForItem(at: firstFlippedCardIndex!) as? CardCollectionViewCell
+        let cardTwoCell = collectionView.cellForItem(at: secondFlippedCardIndex) as? CardCollectionViewCell
+        
         // Compare the two cards
         if cardOne.imageName == cardTwo.imageName {
             
@@ -102,12 +106,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             cardOne.isMatched = true
             cardTwo.isMatched = true
             
+            cardOneCell?.remove()
+            cardTwoCell?.remove()
+            
         }
         else {
             
             // It`s not a match
             
             // Flip them back over
+            cardOneCell?.flipDown()
+            cardTwoCell?.flipDown()
             
         }
         
