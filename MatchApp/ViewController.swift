@@ -33,6 +33,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         // Initialize the timer
         timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer!, forMode: .common)
         
     }
     
