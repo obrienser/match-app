@@ -59,4 +59,18 @@ class CardCollectionViewCell: UICollectionViewCell {
         
     }
     
+    func remove() {
+        
+        // Make the image views invisible
+        backImageView.alpha = 0
+        
+        UIView.animate(withDuration: 0.3, delay: 0.5, options: .curveEaseOut, animations: {
+            
+            self.frontImageView.alpha = 0
+            
+        }, completion: nil)
+
+        
+    }
+    
 }

@@ -13,6 +13,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     let model = CardModel()
     var cardsArray = [Card]()
+    
+    var firstFlippedCardIndex: IndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,12 +64,55 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             // Flip the card up
             cell?.flipUp()
             
+            // Check if this is the first card that was flipped or the second card
+            if firstFlippedCardIndex == nil {
+                
+                // This is the first card flipped over
+                firstFlippedCardIndex = indexPath
+                
+            }
+            else {
+                
+                // Second card that is flipped
+                
+                
+                // Run the comparison logic
+                
+                
+            }
+            
+        }
+        
+    }
+    
+    // MARK: - Game Logic Methods
+    
+    func checkForMatch(_ secondFlippedCardIndex: IndexPath) {
+        
+        // Get the two card objects for the two indices and see if they match
+        let cardOne = cardsArray[firstFlippedCardIndex!.row]
+        let cardTwo = cardsArray[secondFlippedCardIndex.row]
+        
+        // Compare the two cards
+        if cardOne.imageName == cardTwo.imageName {
+            
+            // It`s a match
+            
+            // Set the status and remove them
+            cardOne.isMatched = true
+            cardTwo.isMatched = true
+            
         }
         else {
             
-            // Flip the card down
-            cell?.flipDown()            
+            // It`s not a match
+            
+            // Flip them back over
+            
         }
+        
+        // Reset the firstFlippedCardIndex property
+        firstFlippedCardIndex = nil
         
     }
 
