@@ -53,13 +53,27 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        // Configure the state of the cell based on the properties of the Card that it represents
+        
+        let cardCell = cell as? CardCollectionViewCell
+        
+        // Get the card from the card array
+        let card = cardsArray[indexPath.row]
+        
+        // Finish configuring the cell
+        cardCell?.configureCell(card: card)
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         // Get a reference to the cell that was tapped
         let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell
         
         // Check the status of the card to determine how to flip it
-        if cell?.card?.isFlipped == false {
+        if cell?.card?.isFlipped == false && cell?.card?.isMatched == false {
             
             // Flip the card up
             cell?.flipUp()
@@ -113,6 +127,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         else {
             
             // It`s not a match
+            
+            cardOne.isFlipped = false
+            cardTwo.isFlipped = false
             
             // Flip them back over
             cardOneCell?.flipDown()
