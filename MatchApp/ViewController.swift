@@ -215,8 +215,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func showAlert(title: String, message: String) {
         
+        // Create the alert
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
+        // Add a button for the user to dismiss it
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okAction)
+        
+        // Show the alert
         present(alert, animated: true, completion: nil)
     }
 
