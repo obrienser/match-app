@@ -12,7 +12,14 @@ class SoundManager {
     
     var audioPlayer: AVAudioPlayer?
     
-    func playSound() {
+    enum SoundEffect {
+        case flip
+        case match
+        case nomatch
+        case shuffle
+    }
+    
+    func playSound(effect: SoundEffect) {
         
         
         
