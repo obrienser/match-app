@@ -53,7 +53,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             timerLabel.textColor = UIColor.red
             timer?.invalidate()
             
-            // TODO: Check if the user has cleared all the pairs
+            // Check if the user has cleared all the pairs
+            checkForGameEnd()
             
         }
         
@@ -155,6 +156,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             cardOneCell?.remove()
             cardTwoCell?.remove()
             
+            // Was that the last pair?
+            checkForGameEnd()
+            
         }
         else {
             
@@ -173,6 +177,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         firstFlippedCardIndex = nil
         
     }
+    
+    func checkForGameEnd() {
+        
+        // Check if there`s any card that is unmatched
+        var hasWon = true
+        
+        
+        
+    }
 
 }
-
