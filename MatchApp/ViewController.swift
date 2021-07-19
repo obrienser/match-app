@@ -181,10 +181,43 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func checkForGameEnd() {
         
         // Check if there`s any card that is unmatched
+        // Assume the user has won, loop through all the cards to see if all of them are matched
         var hasWon = true
         
+        for card in cardsArray {
+            
+            if card.isMatched == false {
+                // We`ve found a card that is unmatched
+                hasWon = false
+                break
+            }
+            
+        }
         
+        if hasWon == true {
+            
+            // User has won, show an alert
+            showAlert(title: "Congratulations!", message: "You`ve won the game!")
+            
+        }
+        else {
+            
+            // User hasn`t won yet, check if there`s any time left
+            if milliseconds <= 0 {
+                
+                showAlert(title: "Time`s Up", message: "Sorry, better luck next time!")
+                
+            }
+            
+        }
         
+    }
+    
+    func showAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        present(alert, animated: true, completion: nil)
     }
 
 }
